@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <rect width="240" height="80" rx="8" fill="#0052CC"/>
+  <g transform="translate(12,16)">
+    <path d="M4 32c4-10 8-16 20-16s16 6 20 16" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M4 16c4 10 8 16 20 16s16-6 20-16" stroke="#2684FF" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.8"/>
+  </g>
+  <text x="72" y="38" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">Confluence</text>
+  <text x="72" y="58" font-family="Arial,sans-serif" font-size="13" fill="#B8D4FF">MCP Server</text>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "name": "confluence-mcp",
+  "version": "1.0.0",
+  "description": "Confluence MCP Server – CQL full-text search, page read/create/update, space listing, and inline comments for knowledge base management",
+  "transport": ["stdio", "http-streamable"],
+  "tools": [
+    { "name": "confluence_health_check", "description": "Test connection, verify credentials, and get account/space info" },
+    { "name": "search_content", "description": "CQL full-text search across pages and blog posts" },
+    { "name": "get_page", "description": "Get full content of a page by ID" },
+    { "name": "create_page", "description": "Create a new page in a specified space" },
+    { "name": "update_page", "description": "Update an existing page with new content" },
+    { "name": "list_spaces", "description": "List all accessible Confluence spaces" },
+    { "name": "list_pages_in_space", "description": "List pages within a specific space" },
+    { "name": "add_page_comment", "description": "Add an inline comment to a page" }
+  ]
+}

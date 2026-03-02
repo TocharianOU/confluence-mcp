@@ -1,0 +1,43 @@
+{
+  "name": "@tocharianou/confluence-mcp",
+  "description": "Confluence MCP Server – page search (CQL), read, create, update, comment, and space/page listing for security knowledge base management",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "author": "TocharianOU",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": { "confluence-mcp": "dist/index.js" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TocharianOU/confluence-mcp.git"
+  },
+  "keywords": [
+    "confluence", "atlassian", "mcp", "mcp-server", "knowledge-base", "wiki",
+    "security", "incident-response", "model-context-protocol", "claude", "anthropic"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/index.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "start:http": "MCP_TRANSPORT=http node dist/index.js",
+    "inspector": "npx @modelcontextprotocol/inspector node dist/index.js",
+    "release": "./scripts/create-release.sh"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "https": "^1.0.0",
+    "tiktoken": "^1.0.7",
+    "@modelcontextprotocol/sdk": "1.23.0",
+    "@types/express": "^5.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.15",
+    "shx": "0.4.0",
+    "typescript": "^5.8.3"
+  },
+  "engines": { "node": ">=18" }
+}
